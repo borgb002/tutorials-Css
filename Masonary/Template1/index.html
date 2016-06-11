@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>DabolB - Sample Testing</title>
+    <link rel="stylesheet" href="css/StyleSheet.css" type="text/css" />
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "js/generic.js";
+            document.body.appendChild(element);
+
+        }
+
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+
+        sayHello();
+    </script>
+
+    <style>
+        .divBig {
+            height: 300px;
+            width: 65%; /*75% of the screen*/
+            overflow-x: hidden;
+            overflow-y: hidden;
+            position: relative;
+        }
+
+        .divBox {
+            height: 150px;
+            width: 20%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            position: relative;
+        }
+
+        .imgg {
+            top: -55px;
+            left: -5px;
+            height: 100%;
+            width: 100%; /*
+                            Imaging it is being stretched:
+                            100% of image
+                            of 250px means 250/original size
+                         */
+            position: absolute;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+
+    <!--
+    <h1>
+        This should pop a hello.<br />
+    </h1>
+
+    <h3>
+        Move around the script placing it at the head or at the lower end of the HTML.
+    </h3>
+        <div class="divFlex">
+         <div class="divBig">
+            <img class="imgg" src="https://www.agendamalta.com/loadimage/3BA936D3-F84D-4CBA-BD18-6106C3B19495" />
+        </div>
+
+        <div class="divBox">
+            <img class="imgg" src="https://ps.agendatextbooks.com/system/media/images/web/logo.png" />
+        </div>
+        <div class="divBox">
+            <img class="imgg" src="https://ps.agendatextbooks.com/system/media/images/web/logo.png"  />
+        </div>
+    </div>-->
+
+    <div class="ml-pnl ml-clstr ml-clstr--vrt">
+        <div class="ml-clstr__sgmnt ml-clstr__sgmnt--clmn ml-clstr__sgmnt--hlf">
+            <div class="ml-pnl ml-clstr__sgmnt"><img src="img/photo-2.jpg" class="ml-pnl__cntnt ml-pnl__cntnt--img"></div>
+        </div>
+        <div class="ml-clstr__sgmnt ml-clstr__sgmnt--clmn">
+            <div class="ml-pnl ml-clstr__sgmnt">
+                <div class="ml-pnl__cntnt bg--blue tx--white">
+                    <p>This is an image, it's quite nice.</p>
+                </div>
+            </div>
+            <div class="ml-pnl ml-clstr__sgmnt">
+                <div class="ml-pnl__cntnt bg--blue tx--white"><a>Click here to find out more.</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ml-pnl ml-clstr ml-clstr--vrt">
+        <div class="ml-clstr__sgmnt ml-clstr__sgmnt--clmn ml-clstr__sgmnt--hlf">
+            <div class="ml-pnl ml-clstr__sgmnt"><textarea class="ml-pnl__cntnt ml-pnl__cntnt--img">abc</textarea></div>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div> </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="inner">
+
+    </p>
+
+    <!--
+        <script defer src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/generic.js"></script>
+        <script>
+            window.onload = sayHello;
+        </script>
+    -->
+
+</body>
+</html>

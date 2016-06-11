@@ -1,0 +1,64 @@
+﻿.divContainer {
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.divLeft {
+    position: relative;
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    height: 600px;
+}
+
+    .divLeft .topDown {
+        position: relative;
+        border: 1px solid red;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divLeft img {
+        max-height: 100%;
+    }
+
+
+.divRight {
+    position: relative;
+    max-width: 70%;
+    min-width: 70%;
+    height: 600px;
+}
+
+    .divRight .topDown {
+        position: relative;
+        border: 1px solid green;
+        overflow: hidden;
+    }
+
+
+        .divRight .topDown img {
+            /*width: 100%;*/
+            position: relative;
+            top: -934px;
+            left: -1000px;
+        }
+
+
+
+
+label {
+    position: relative;
+}

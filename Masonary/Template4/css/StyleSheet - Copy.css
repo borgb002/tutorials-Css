@@ -1,0 +1,72 @@
+﻿
+.divContainer {
+    border: 1px solid red;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+
+
+
+.divLeft {
+ 
+    border: 1px solid blue;
+    background: #808080;
+    min-width: 70%;
+    max-width: 70%;
+    max-height: 473px;
+    overflow: hidden;
+}
+
+    .divLeft img {
+        top: -63px;
+        left: 0px;
+        position: relative;
+        /*height: 100%;
+        max-height: 473px;*/
+        width: 100%;
+    }
+
+
+.divRight {
+    position:relative;
+    min-width: 30%;
+    background: #ff006e;
+}
+
+.topDown {
+    position: relative;
+    flex-direction: column;
+    /*min-height: 200px;*/
+    border: 1px solid blue;
+    overflow: hidden;
+}
+
+    .topDown img.stretchImage {
+        /* cap height at 100px but stretch the width to fit the available space i.e. 30% */
+        width: 100%;
+        height: 100px;
+    }
+
+    .topDown img.fitWidth {
+        /* Allow height to adjust automatically */
+        /*max-height: 100px;*/
+        max-width: 100%;
+    }
+
+    .topDown img.fitHeight {
+        max-height: 100px;
+    }
+
+    label {
+        position: absolute;
+        font-size: 1em;
+        top: 0px;
+        color: white;
+        z-index:1;
+        font-family: 'Arial Unicode MS';
+        text-shadow: 1px 1px 1.1px #808080;
+    }
